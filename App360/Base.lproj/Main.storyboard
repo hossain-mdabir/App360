@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YWt-f5-3s1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App360 View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="App360ViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJj-Dd-dAy">
+                                <rect key="frame" x="37" y="351" width="127" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Chronometer"/>
+                                <connections>
+                                    <segue destination="vnJ-Rz-hW8" kind="show" id="Y9b-gN-Ynh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-rV-LUv">
+                                <rect key="frame" x="210" y="351" width="127" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Daily Task"/>
+                                <connections>
+                                    <segue destination="hgg-EN-W6M" kind="show" destinationCreationSelector="swiftUIAction:" id="bTg-gN-tZx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjj-zh-sDw">
+                                <rect key="frame" x="37" y="527" width="127" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Notes"/>
+                                <connections>
+                                    <segue destination="uUS-iP-qQS" kind="show" id="LiE-RP-u9U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tl8-n6-xNe">
+                                <rect key="frame" x="186" y="526" width="175" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Monthly Expenses"/>
+                                <connections>
+                                    <segue destination="yTO-W3-EG2" kind="show" id="ArE-3k-9nJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryq-d7-iYw">
+                                <rect key="frame" x="51" y="176" width="99" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Calculator"/>
+                                <connections>
+                                    <segue destination="qd6-Me-G3f" kind="show" id="JIq-rj-0Pf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calculator" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCW-UE-WxD">
+                                <rect key="frame" x="51" y="176" width="99" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chronometer" translatesAutoresizingMaskIntoConstraints="NO" id="DSk-PT-97S">
+                                <rect key="frame" x="51" y="351" width="99" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dailyTask" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-Jh-9zH">
+                                <rect key="frame" x="224" y="351" width="99" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notes" translatesAutoresizingMaskIntoConstraints="NO" id="DgX-h9-ms9">
+                                <rect key="frame" x="51" y="527" width="99" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="salaryExpenditure1" translatesAutoresizingMaskIntoConstraints="NO" id="Q2K-i8-hDc">
+                                <rect key="frame" x="231" y="526" width="99" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hPo-0R-tLS">
+                                <rect key="frame" x="202" y="176" width="142" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="Q2M-3s-ga9"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Age Calculator">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="wmH-oo-aaG" kind="show" id="x8M-CP-hK5"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ageCalculator" translatesAutoresizingMaskIntoConstraints="NO" id="Cz5-s7-Peg">
+                                <rect key="frame" x="223" y="176" width="99" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LCX-zY-PLa"/>
+                    <connections>
+                        <outlet property="app360PageViewer" destination="8bC-Xf-vdC" id="IGF-NC-7CR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11526" y="368"/>
+        </scene>
+        <!--Chronometer-->
+        <scene sceneID="Len-6K-DHb">
+            <objects>
+                <viewController id="vnJ-Rz-hW8" customClass="ChronometerViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G8P-CI-9WL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COc-Vr-r3J">
+                                <rect key="frame" x="30" y="381" width="354" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjW-Jy-fm0">
+                                <rect key="frame" x="30" y="770" width="143" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="vnJ-Rz-hW8" eventType="touchUpInside" id="bcg-ID-RYO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftm-hj-SUS">
+                                <rect key="frame" x="281" y="770" width="103" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="vnJ-Rz-hW8" eventType="touchUpInside" id="3M8-et-PJ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDE-OO-XW1">
+                                <rect key="frame" x="173" y="770" width="108" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="vnJ-Rz-hW8" eventType="touchUpInside" id="a9Y-91-hYZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ftm-hj-SUS" firstAttribute="leading" secondItem="RDE-OO-XW1" secondAttribute="trailing" constant="45" id="56e-70-Vxz"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="trailing" secondItem="COc-Vr-r3J" secondAttribute="trailing" constant="30" id="6Wt-HW-1L2"/>
+                            <constraint firstItem="RDE-OO-XW1" firstAttribute="leading" secondItem="i29-cJ-kXi" secondAttribute="leading" constant="173" id="9vh-lX-srD"/>
+                            <constraint firstItem="RDE-OO-XW1" firstAttribute="leading" secondItem="XjW-Jy-fm0" secondAttribute="trailing" id="Bk5-fQ-hbt"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="trailing" secondItem="RDE-OO-XW1" secondAttribute="trailing" constant="133" id="Jcg-Hn-Nma"/>
+                            <constraint firstItem="XjW-Jy-fm0" firstAttribute="leading" secondItem="i29-cJ-kXi" secondAttribute="leading" constant="30" id="Jsr-Y3-tXN"/>
+                            <constraint firstItem="RDE-OO-XW1" firstAttribute="leading" secondItem="XjW-Jy-fm0" secondAttribute="trailing" id="PO3-mT-dpB"/>
+                            <constraint firstItem="XjW-Jy-fm0" firstAttribute="top" secondItem="COc-Vr-r3J" secondAttribute="bottom" constant="330" id="RZ0-nc-DBH"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="trailing" secondItem="XjW-Jy-fm0" secondAttribute="trailing" constant="232" id="Y0j-UB-hDF"/>
+                            <constraint firstItem="Ftm-hj-SUS" firstAttribute="top" secondItem="COc-Vr-r3J" secondAttribute="bottom" constant="330" id="YaF-xd-4SK"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="bottom" secondItem="RDE-OO-XW1" secondAttribute="bottom" constant="50" id="Z2t-F7-KUR"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="bottom" secondItem="Ftm-hj-SUS" secondAttribute="bottom" constant="50" id="Zl0-XB-Tnv"/>
+                            <constraint firstItem="RDE-OO-XW1" firstAttribute="top" secondItem="COc-Vr-r3J" secondAttribute="bottom" constant="330" id="c4Q-yX-LpD"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="bottom" secondItem="XjW-Jy-fm0" secondAttribute="bottom" constant="50" id="cgk-13-KBG"/>
+                            <constraint firstItem="RDE-OO-XW1" firstAttribute="leading" secondItem="XjW-Jy-fm0" secondAttribute="trailing" constant="30" id="hVC-2r-VZn"/>
+                            <constraint firstItem="Ftm-hj-SUS" firstAttribute="leading" secondItem="RDE-OO-XW1" secondAttribute="trailing" id="l9G-Jq-BoF"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="trailing" secondItem="Ftm-hj-SUS" secondAttribute="trailing" constant="30" id="p5e-Yl-XVY"/>
+                            <constraint firstItem="COc-Vr-r3J" firstAttribute="leading" secondItem="i29-cJ-kXi" secondAttribute="leading" constant="30" id="qM5-Kg-5Oc"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="trailing" secondItem="Ftm-hj-SUS" secondAttribute="trailing" constant="30" id="qjP-jH-uGp"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="bottom" secondItem="Ftm-hj-SUS" secondAttribute="bottom" constant="50" id="wlW-Pp-FUM"/>
+                            <constraint firstItem="i29-cJ-kXi" firstAttribute="bottom" secondItem="RDE-OO-XW1" secondAttribute="bottom" constant="50" id="zej-ca-GCV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i29-cJ-kXi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chronometer" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="IXc-B2-f1C">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="xgE-4t-2mw"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chronoLabel" destination="COc-Vr-r3J" id="wvi-jB-lPe"/>
+                        <outlet property="pauseButton" destination="XjW-Jy-fm0" id="K4m-t2-Bn4"/>
+                        <outlet property="resetButton" destination="RDE-OO-XW1" id="OWR-Es-6WJ"/>
+                        <outlet property="startButton" destination="Ftm-hj-SUS" id="AcU-4a-9wy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fL-qp-krT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10068" y="11"/>
+        </scene>
+        <!--Calculator-->
+        <scene sceneID="dGW-oL-YSt">
+            <objects>
+                <viewController id="qd6-Me-G3f" customClass="calculatorViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H92-B0-MiS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4x-AN-Imo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="309.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3M-vI-Mdx" customClass="calculatorViewDesign" customModule="App360" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="30" width="384" height="229.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4+6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7x-ai-Gnf">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="95.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMn-ac-yBL">
+                                                <rect key="frame" x="0.0" y="95.5" width="364" height="134"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
+                                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="V7x-ai-Gnf" firstAttribute="top" secondItem="N3M-vI-Mdx" secondAttribute="top" id="AFP-gJ-tQX"/>
+                                            <constraint firstItem="oMn-ac-yBL" firstAttribute="height" secondItem="V7x-ai-Gnf" secondAttribute="height" multiplier="1.4" id="AM5-fP-95a"/>
+                                            <constraint firstItem="oMn-ac-yBL" firstAttribute="top" secondItem="V7x-ai-Gnf" secondAttribute="bottom" id="Aje-bh-e7f"/>
+                                            <constraint firstItem="oMn-ac-yBL" firstAttribute="leading" secondItem="N3M-vI-Mdx" secondAttribute="leading" id="JPx-FH-FXC"/>
+                                            <constraint firstAttribute="trailing" secondItem="V7x-ai-Gnf" secondAttribute="trailing" constant="20" id="VmZ-N1-XFe"/>
+                                            <constraint firstItem="V7x-ai-Gnf" firstAttribute="leading" secondItem="N3M-vI-Mdx" secondAttribute="leading" id="XHt-Mb-E28"/>
+                                            <constraint firstAttribute="trailing" secondItem="oMn-ac-yBL" secondAttribute="trailing" constant="20" id="hIa-qr-qbm"/>
+                                            <constraint firstAttribute="bottom" secondItem="oMn-ac-yBL" secondAttribute="bottom" id="xjQ-Ge-N0k"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedView" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="N3M-vI-Mdx" firstAttribute="leading" secondItem="w4x-AN-Imo" secondAttribute="leading" constant="15" id="T7k-zG-o14"/>
+                                    <constraint firstAttribute="bottom" secondItem="N3M-vI-Mdx" secondAttribute="bottom" constant="50" id="pWF-Nr-idp"/>
+                                    <constraint firstItem="N3M-vI-Mdx" firstAttribute="top" secondItem="w4x-AN-Imo" secondAttribute="top" constant="30" id="tJd-OH-u8n"/>
+                                    <constraint firstAttribute="trailing" secondItem="N3M-vI-Mdx" secondAttribute="trailing" constant="15" id="wTz-e7-i0V"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hwg-PD-nnz">
+                                <rect key="frame" x="0.0" y="397.5" width="414" height="464.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xLY-fo-FgT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HNa-8D-HjQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="93"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEf-ky-0ud" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="93"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="allClearButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="nti-eP-7ux"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oGR-b6-JK1">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="93"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2X-fp-vMf" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="93"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="C">
+                                                            <color key="titleColor" red="1" green="0.3024402082" blue="0.44914529079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clearButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="bZv-bp-kwk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4a-AM-tbY" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="93"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="/">
+                                                            <color key="titleColor" red="1" green="0.4560709188" blue="0.34031750449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="divisionButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="Zv9-rd-bLw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9wC-Sf-7Jj">
+                                        <rect key="frame" x="0.0" y="93" width="414" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pL-da-5gS" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="7"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sevenButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="AZ3-Wq-gfu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soL-lh-Xys" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="8"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="eightButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="8F2-Eb-j8h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UZ-kP-wlr" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="9"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nineButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="dWy-pV-2Gl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWX-kt-LGL" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="*">
+                                                    <color key="titleColor" red="1" green="0.4560709188" blue="0.34031750449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="multiplicationButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="ulU-Ck-fqa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d1B-ee-E90">
+                                        <rect key="frame" x="0.0" y="186" width="414" height="92.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-K6-Lgg" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="92.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="4"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="fourButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="jgM-UZ-SI1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCI-M9-1Rq" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="92.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="fiveButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="kb8-Gx-Ogh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWi-Dd-DB9" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="92.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="6"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sixButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="5qi-jE-7Ak"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJc-lX-0LZ" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="92.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="0.4560709188" blue="0.34031750449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="subtractionButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="iH4-rt-VRI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Eap-rp-Yqg">
+                                        <rect key="frame" x="0.0" y="278.5" width="414" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2a-MD-iKl" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="oneButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="sHb-H8-Tqa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO9-Cc-8z8" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="2"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="twoButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="F6M-IF-hoc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W5-FV-3vH" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="threeButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="7Tv-1o-F5C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnw-9L-fK7" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="93"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="1" green="0.4560709188" blue="0.34031750449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="additionButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="G4h-vx-RVc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gud-Eu-mzB">
+                                        <rect key="frame" x="0.0" y="371.5" width="414" height="93"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-ia-rWu">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="93"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khK-Fg-akK" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="93"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="."/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="pointButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="dCu-YB-L6E"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATq-Ef-YG9" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="93"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="0"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="zeroButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="sxk-Mv-Oyw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Pv-2r-u18">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="93"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIF-4E-isG" customClass="calculatorButtonDesign" customModule="App360" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="93"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" red="1" green="0.4560709188" blue="0.34031750449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="equalsButtonTapped:" destination="qd6-Me-G3f" eventType="touchUpInside" id="CkS-JN-Abw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hwg-PD-nnz" firstAttribute="height" secondItem="w4x-AN-Imo" secondAttribute="height" multiplier="1.5" id="72f-40-w9D"/>
+                            <constraint firstItem="s5T-DB-ruH" firstAttribute="trailing" secondItem="w4x-AN-Imo" secondAttribute="trailing" id="8bX-Qa-J0c"/>
+                            <constraint firstItem="s5T-DB-ruH" firstAttribute="trailing" secondItem="hwg-PD-nnz" secondAttribute="trailing" id="Jnh-X5-5cw"/>
+                            <constraint firstItem="hwg-PD-nnz" firstAttribute="top" secondItem="w4x-AN-Imo" secondAttribute="bottom" id="UNn-qC-qsZ"/>
+                            <constraint firstItem="hwg-PD-nnz" firstAttribute="leading" secondItem="s5T-DB-ruH" secondAttribute="leading" id="ViG-NE-4rz"/>
+                            <constraint firstItem="w4x-AN-Imo" firstAttribute="leading" secondItem="s5T-DB-ruH" secondAttribute="leading" id="hth-l7-BH6"/>
+                            <constraint firstItem="s5T-DB-ruH" firstAttribute="bottom" secondItem="hwg-PD-nnz" secondAttribute="bottom" id="pwX-mT-Yli"/>
+                            <constraint firstItem="w4x-AN-Imo" firstAttribute="top" secondItem="s5T-DB-ruH" secondAttribute="top" id="ts6-k8-fRr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s5T-DB-ruH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculator" id="zSs-4z-kaD"/>
+                    <connections>
+                        <outlet property="calculatorInputs" destination="V7x-ai-Gnf" id="gg6-LX-Azt"/>
+                        <outlet property="calculatorOutput" destination="oMn-ac-yBL" id="dyB-eL-AuR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roF-n1-ewk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10068" y="-672"/>
+        </scene>
+        <!--Age Calculator-->
+        <scene sceneID="1U2-0X-X6L">
+            <objects>
+                <viewController id="wmH-oo-aaG" customClass="AgeCalculatorViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EBG-vG-Fwh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XER-Qi-OnJ">
+                                <rect key="frame" x="26" y="178" width="362" height="74.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vfL-Ep-rr9">
+                                <rect key="frame" x="16" y="426" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5vS-nq-mGL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-0f-3dQ">
+                                <rect key="frame" x="140.5" y="534" width="133" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Calculate Age"/>
+                                <connections>
+                                    <action selector="calculateAgeButtonTapped:" destination="wmH-oo-aaG" eventType="touchUpInside" id="igR-DM-Rls"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxG-JP-IjK">
+                                <rect key="frame" x="207" y="130" width="0.0" height="124"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HC-fT-Oq5">
+                                <rect key="frame" x="16" y="268.5" width="382" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="czX-mt-ctx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7HC-fT-Oq5" firstAttribute="top" secondItem="XER-Qi-OnJ" secondAttribute="bottom" constant="16" id="7Im-KY-hSY"/>
+                            <constraint firstItem="XER-Qi-OnJ" firstAttribute="centerX" secondItem="EBG-vG-Fwh" secondAttribute="centerX" id="8LL-H7-bYh"/>
+                            <constraint firstItem="7HC-fT-Oq5" firstAttribute="leading" secondItem="yC6-nq-8rF" secondAttribute="leading" constant="16" id="C4Q-5a-hwH"/>
+                            <constraint firstItem="yC6-nq-8rF" firstAttribute="trailing" secondItem="7HC-fT-Oq5" secondAttribute="trailing" constant="16" id="Cp6-hT-cLQ"/>
+                            <constraint firstItem="mxG-JP-IjK" firstAttribute="centerX" secondItem="EBG-vG-Fwh" secondAttribute="centerX" id="JDY-Zi-ztW"/>
+                            <constraint firstItem="XER-Qi-OnJ" firstAttribute="top" secondItem="yC6-nq-8rF" secondAttribute="top" constant="90" id="JeJ-T3-9qJ"/>
+                            <constraint firstItem="1ab-0f-3dQ" firstAttribute="top" secondItem="vfL-Ep-rr9" secondAttribute="bottom" constant="64" id="L3j-Fq-90h"/>
+                            <constraint firstItem="vfL-Ep-rr9" firstAttribute="centerY" secondItem="EBG-vG-Fwh" secondAttribute="centerY" id="OO6-Y1-zSy"/>
+                            <constraint firstItem="yC6-nq-8rF" firstAttribute="trailing" secondItem="vfL-Ep-rr9" secondAttribute="trailing" constant="16" id="PrU-ZK-Lfh"/>
+                            <constraint firstItem="vfL-Ep-rr9" firstAttribute="leading" secondItem="yC6-nq-8rF" secondAttribute="leading" constant="16" id="Vpk-Qj-ytq"/>
+                            <constraint firstItem="mxG-JP-IjK" firstAttribute="top" secondItem="yC6-nq-8rF" secondAttribute="top" constant="42" id="VwL-UG-ITs"/>
+                            <constraint firstItem="yC6-nq-8rF" firstAttribute="bottom" secondItem="mxG-JP-IjK" secondAttribute="bottom" constant="608" id="XrK-Bv-Nog"/>
+                            <constraint firstItem="XER-Qi-OnJ" firstAttribute="height" secondItem="mxG-JP-IjK" secondAttribute="height" multiplier="0.6" id="g4b-Qy-um1"/>
+                            <constraint firstItem="XER-Qi-OnJ" firstAttribute="leading" secondItem="yC6-nq-8rF" secondAttribute="leading" constant="26" id="iPu-Z1-qiI"/>
+                            <constraint firstItem="yC6-nq-8rF" firstAttribute="trailing" secondItem="XER-Qi-OnJ" secondAttribute="trailing" constant="26" id="rsd-Lh-iFt"/>
+                            <constraint firstItem="1ab-0f-3dQ" firstAttribute="centerX" secondItem="EBG-vG-Fwh" secondAttribute="centerX" id="vAs-1c-yuS"/>
+                            <constraint firstItem="vfL-Ep-rr9" firstAttribute="centerX" secondItem="EBG-vG-Fwh" secondAttribute="centerX" id="ycW-7u-zfC"/>
+                            <constraint firstItem="7HC-fT-Oq5" firstAttribute="centerX" secondItem="EBG-vG-Fwh" secondAttribute="centerX" id="ype-fA-6Oy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yC6-nq-8rF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Age Calculator" id="kKO-Te-beL"/>
+                    <connections>
+                        <outlet property="ageStatusLabel" destination="7HC-fT-Oq5" id="TKv-Ij-feM"/>
+                        <outlet property="dateOfBIrthTextField" destination="vfL-Ep-rr9" id="2v8-Aj-NPi"/>
+                        <outlet property="youAre" destination="mxG-JP-IjK" id="esL-n7-irQ"/>
+                        <outlet property="yourAgeLabel" destination="XER-Qi-OnJ" id="l7q-NW-GLY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9a-ab-YDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8891.3043478260879" y="-672.32142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o1d-7j-0im">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YWt-f5-3s1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wVM-K3-jhJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MX0-wa-thl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Amx-fy-v7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12487.200000000001" y="368.7192118226601"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="EIY-XU-hLG">
+            <objects>
+                <hostingController id="hgg-EN-W6M" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AH6-sF-Abm"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heg-rd-syA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10068" y="694"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="Oy8-Rl-LYc">
+            <objects>
+                <viewController id="uUS-iP-qQS" customClass="NotesViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I3B-a4-tmv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nK3-TL-tXW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hdj-gS-bST" firstAttribute="bottom" secondItem="nK3-TL-tXW" secondAttribute="bottom" id="K35-Dh-Irm"/>
+                            <constraint firstItem="nK3-TL-tXW" firstAttribute="top" secondItem="hdj-gS-bST" secondAttribute="top" id="O3f-hQ-16U"/>
+                            <constraint firstItem="nK3-TL-tXW" firstAttribute="leading" secondItem="hdj-gS-bST" secondAttribute="leading" id="dYV-xB-dM5"/>
+                            <constraint firstItem="hdj-gS-bST" firstAttribute="trailing" secondItem="nK3-TL-tXW" secondAttribute="trailing" id="sph-WR-QUz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hdj-gS-bST"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes" largeTitleDisplayMode="always" id="OfZ-ad-YvM">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="OqT-3x-dtN"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="OMm-nw-yIA">
+                            <connections>
+                                <action selector="rightBarBtnAction:" destination="uUS-iP-qQS" id="ziX-pc-BDA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="notesTableViewController" destination="nK3-TL-tXW" id="i14-rl-T7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vI3-ou-fpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10068" y="1375"/>
+        </scene>
+        <!--Add Note-->
+        <scene sceneID="2fk-hl-wBV">
+            <objects>
+                <viewController storyboardIdentifier="addNoteViewController" id="N7r-EY-fG9" customClass="addNoteViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lea-wl-XS4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-GG-Nxs">
+                                <rect key="frame" x="20" y="108" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="e9c-N0-3fl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ct-QJ-ool" userLabel="SeparatorView">
+                                <rect key="frame" x="0.0" y="178" width="414" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="L26-El-Wyu"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-xP-3Ip">
+                                <rect key="frame" x="20" y="199" width="374" height="643"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AA9-GG-Nxs" firstAttribute="top" secondItem="8DM-uu-Rie" secondAttribute="top" constant="20" id="3Cf-lT-um5"/>
+                            <constraint firstItem="5Ct-QJ-ool" firstAttribute="top" secondItem="AA9-GG-Nxs" secondAttribute="bottom" constant="20" id="AVC-iM-3PB"/>
+                            <constraint firstItem="bdZ-xP-3Ip" firstAttribute="leading" secondItem="8DM-uu-Rie" secondAttribute="leading" constant="20" id="E6m-fp-hdB"/>
+                            <constraint firstItem="5Ct-QJ-ool" firstAttribute="leading" secondItem="8DM-uu-Rie" secondAttribute="leading" id="QEd-FL-nl2"/>
+                            <constraint firstItem="AA9-GG-Nxs" firstAttribute="leading" secondItem="8DM-uu-Rie" secondAttribute="leading" constant="20" id="QI2-Z6-laN"/>
+                            <constraint firstItem="8DM-uu-Rie" firstAttribute="trailing" secondItem="5Ct-QJ-ool" secondAttribute="trailing" id="g9Y-IP-xbD"/>
+                            <constraint firstItem="bdZ-xP-3Ip" firstAttribute="top" secondItem="5Ct-QJ-ool" secondAttribute="bottom" constant="20" id="l2o-lK-x5S"/>
+                            <constraint firstItem="8DM-uu-Rie" firstAttribute="trailing" secondItem="bdZ-xP-3Ip" secondAttribute="trailing" constant="20" id="og5-ok-JF3"/>
+                            <constraint firstItem="8DM-uu-Rie" firstAttribute="trailing" secondItem="AA9-GG-Nxs" secondAttribute="trailing" constant="20" id="ozN-Uh-6iQ"/>
+                            <constraint firstItem="8DM-uu-Rie" firstAttribute="bottom" secondItem="bdZ-xP-3Ip" secondAttribute="bottom" constant="20" id="v5J-ZI-bhf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8DM-uu-Rie"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Note" id="L8i-G4-RqZ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ntm-UT-GUk">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="N7r-EY-fG9" id="w2P-7B-iGV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="cMO-z4-9da">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="N7r-EY-fG9" id="ydg-kv-OCy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="bdZ-xP-3Ip" id="ESG-Qg-A4d"/>
+                        <outlet property="titleTextField" destination="AA9-GG-Nxs" id="R3F-3X-adf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITO-3Z-x6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8516" y="1390"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r13-UO-dxm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Is7-ly-BVu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="N7q-eK-Fpo"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o29-fi-igb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N7r-EY-fG9" kind="relationship" relationship="rootViewController" id="veZ-F0-zqu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1iZ-H5-sRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9300" y="1390"/>
+        </scene>
+        <!--Note Detail View Controller-->
+        <scene sceneID="IL0-ZX-zkc">
+            <objects>
+                <viewController storyboardIdentifier="noteDetailViewController" id="syv-Ki-2SW" customClass="noteDetailViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5dX-TD-JBi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n7B-Wx-BXs">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XfF-Hh-rmg" firstAttribute="bottom" secondItem="n7B-Wx-BXs" secondAttribute="bottom" constant="20" id="Wk5-Z3-kM9"/>
+                            <constraint firstItem="n7B-Wx-BXs" firstAttribute="top" secondItem="XfF-Hh-rmg" secondAttribute="top" constant="20" id="hLq-7m-Ydh"/>
+                            <constraint firstItem="n7B-Wx-BXs" firstAttribute="leading" secondItem="XfF-Hh-rmg" secondAttribute="leading" constant="20" id="lKc-Kl-jFS"/>
+                            <constraint firstItem="XfF-Hh-rmg" firstAttribute="trailing" secondItem="n7B-Wx-BXs" secondAttribute="trailing" constant="20" id="uBh-I3-mf9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XfF-Hh-rmg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gt8-ff-X8c">
+                        <barButtonItem key="backBarButtonItem" title="Notes" id="Lzl-3g-EBX"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="n7B-Wx-BXs" id="Ek6-Q3-qCF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuV-zi-cem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7739" y="1390"/>
+        </scene>
+        <!--Monthly Expenses-->
+        <scene sceneID="NZT-FY-lRQ">
+            <objects>
+                <viewController storyboardIdentifier="ExpendatureViewController" id="yTO-W3-EG2" customClass="ExpensesViewController" customModule="App360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ew4-ev-CFO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your salary" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7It-m6-j8b">
+                                <rect key="frame" x="20" y="113" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="N6j-9i-WTD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="i2h-45-Z57">
+                                <rect key="frame" x="88.5" y="181" width="237" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KV-CA-1yb">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="7" maxX="10" maxY="7"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetAction:" destination="yTO-W3-EG2" eventType="touchUpInside" id="P5B-4k-G2K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-Pn-B4c">
+                                        <rect key="frame" x="104" y="0.0" width="133" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="7" maxX="10" maxY="7"/>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateAction:" destination="yTO-W3-EG2" eventType="touchUpInside" id="zqE-if-B45"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-ZD-r1t">
+                                <rect key="frame" x="0.0" y="245" width="414" height="617"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Dee-5Y-e3k">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Px-Ec-JMt">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expense Breakdown" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0C-pD-cK2">
+                                            <rect key="frame" x="130.5" y="12.5" width="153" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2Px-Ec-JMt" firstAttribute="centerX" secondItem="Dee-5Y-e3k" secondAttribute="centerX" id="9hT-pE-dqg"/>
+                                        <constraint firstItem="2Px-Ec-JMt" firstAttribute="top" secondItem="Dee-5Y-e3k" secondAttribute="top" id="FRH-Gz-hmq"/>
+                                        <constraint firstItem="2Px-Ec-JMt" firstAttribute="leading" secondItem="Dee-5Y-e3k" secondAttribute="leading" constant="20" id="Zap-aP-aeT"/>
+                                        <constraint firstItem="y0C-pD-cK2" firstAttribute="centerY" secondItem="Dee-5Y-e3k" secondAttribute="centerY" id="kWy-04-0gu"/>
+                                        <constraint firstAttribute="bottom" secondItem="2Px-Ec-JMt" secondAttribute="bottom" id="mcD-zH-6cP"/>
+                                        <constraint firstItem="y0C-pD-cK2" firstAttribute="centerX" secondItem="Dee-5Y-e3k" secondAttribute="centerX" id="w5x-KN-uuD"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpenseTableViewCell" rowHeight="56" id="oFc-1i-deB" customClass="ExpenseTableViewCell" customModule="App360" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oFc-1i-deB" id="8sa-wd-6aq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8a-n5-o1d">
+                                                    <rect key="frame" x="20" y="18" width="113.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.20 TK" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bty-87-7k5">
+                                                    <rect key="frame" x="327" y="18.5" width="67" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="O8a-n5-o1d" firstAttribute="centerY" secondItem="8sa-wd-6aq" secondAttribute="centerY" id="5N6-dW-1re"/>
+                                                <constraint firstItem="O8a-n5-o1d" firstAttribute="leading" secondItem="8sa-wd-6aq" secondAttribute="leading" constant="20" id="EGC-cc-Nxc"/>
+                                                <constraint firstAttribute="trailing" secondItem="bty-87-7k5" secondAttribute="trailing" constant="20" id="EHX-pT-Cts"/>
+                                                <constraint firstItem="bty-87-7k5" firstAttribute="centerY" secondItem="O8a-n5-o1d" secondAttribute="centerY" id="rmZ-SD-Goa"/>
+                                                <constraint firstItem="bty-87-7k5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O8a-n5-o1d" secondAttribute="trailing" constant="8" id="zpL-Jb-c4v"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="O8a-n5-o1d" id="ZtQ-UD-0XY"/>
+                                            <outlet property="valueLabel" destination="bty-87-7k5" id="AjS-80-i9b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yTO-W3-EG2" id="b76-J2-xEo"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qT-M5-Irm">
+                                <rect key="frame" x="0.0" y="245" width="414" height="617"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your salary to see estimated expense breakdown" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4s9-7q-OgB">
+                                        <rect key="frame" x="67.5" y="287" width="279.5" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="4s9-7q-OgB" firstAttribute="centerY" secondItem="6qT-M5-Irm" secondAttribute="centerY" id="DG7-n6-en9"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4s9-7q-OgB" secondAttribute="trailing" constant="44" id="HHa-g2-Wvx"/>
+                                    <constraint firstItem="4s9-7q-OgB" firstAttribute="centerX" secondItem="6qT-M5-Irm" secondAttribute="centerX" id="Ii7-vp-1Pp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DJr-ZD-r1t" firstAttribute="trailing" secondItem="BF0-q5-vQq" secondAttribute="trailing" id="6uU-2E-8Mb"/>
+                            <constraint firstItem="i2h-45-Z57" firstAttribute="centerX" secondItem="7It-m6-j8b" secondAttribute="centerX" id="CQo-Tk-u1E"/>
+                            <constraint firstItem="BF0-q5-vQq" firstAttribute="trailing" secondItem="7It-m6-j8b" secondAttribute="trailing" constant="20" id="CRN-rG-405"/>
+                            <constraint firstItem="i2h-45-Z57" firstAttribute="top" secondItem="7It-m6-j8b" secondAttribute="bottom" constant="20" id="EV4-L4-rjC"/>
+                            <constraint firstItem="6qT-M5-Irm" firstAttribute="leading" secondItem="DJr-ZD-r1t" secondAttribute="leading" id="LT1-uV-vHv"/>
+                            <constraint firstItem="DJr-ZD-r1t" firstAttribute="bottom" secondItem="BF0-q5-vQq" secondAttribute="bottom" id="LgL-hi-gle"/>
+                            <constraint firstItem="6qT-M5-Irm" firstAttribute="bottom" secondItem="DJr-ZD-r1t" secondAttribute="bottom" id="PWP-ri-gcg"/>
+                            <constraint firstItem="DJr-ZD-r1t" firstAttribute="leading" secondItem="BF0-q5-vQq" secondAttribute="leading" id="XBT-W4-rPe"/>
+                            <constraint firstItem="7It-m6-j8b" firstAttribute="top" secondItem="BF0-q5-vQq" secondAttribute="top" constant="25" id="avj-NJ-f2M"/>
+                            <constraint firstItem="DJr-ZD-r1t" firstAttribute="top" secondItem="i2h-45-Z57" secondAttribute="bottom" constant="20" id="b2D-jR-qwc"/>
+                            <constraint firstItem="6qT-M5-Irm" firstAttribute="top" secondItem="DJr-ZD-r1t" secondAttribute="top" id="hDv-I8-bSa"/>
+                            <constraint firstItem="7It-m6-j8b" firstAttribute="leading" secondItem="BF0-q5-vQq" secondAttribute="leading" constant="20" id="mWJ-dd-OPU"/>
+                            <constraint firstItem="6qT-M5-Irm" firstAttribute="trailing" secondItem="DJr-ZD-r1t" secondAttribute="trailing" id="xUw-8v-e5A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BF0-q5-vQq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Monthly Expenses" id="JkG-bj-NCM"/>
+                    <connections>
+                        <outlet property="emptyListView" destination="6qT-M5-Irm" id="Za0-k0-Wzd"/>
+                        <outlet property="expenseTableView" destination="DJr-ZD-r1t" id="sjU-ay-gXo"/>
+                        <outlet property="salaryInputTextField" destination="7It-m6-j8b" id="Sel-Pz-80Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4g-Lg-11t" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11545" y="1390"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ageCalculator" width="125" height="125"/>
+        <image name="calculator" width="128" height="128"/>
+        <image name="chronometer" width="128" height="128"/>
+        <image name="dailyTask" width="128" height="128"/>
+        <image name="notes" width="128" height="128"/>
+        <image name="salaryExpenditure1" width="128" height="128"/>
+    </resources>
+</document>
