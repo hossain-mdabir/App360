@@ -1,5 +1,5 @@
 # App360
-## This was my M.Sc final year project. 
+## This was my B.Sc final year project. 
 
 This app is combination of 6 apps...
 1. Calculator
